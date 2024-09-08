@@ -34,7 +34,7 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           sudo docker pull rizwandev99/week-18-class:latest
           sudo docker stop web-app || true
